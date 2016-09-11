@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FLEX</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+     .item{
+         background-color: red;
+         width: 200px;
+         height: 150px;
+         margin: 10px;
+         flex: 1 1 200px;
+         text-align: center;
+         line-height: 150px;
+         color: white;
+     }
+     .container{
+         background-color: yellow;
+         height: 500px;
+         display: flex;
+         flex-flow: row wrap;
+         justify-content:space-around;
+         align-items: center;
+         /*align-content: flex-start;*/
+     }
+        .item_1{
+            align-self:flex-end;
+            flex: 1 1 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="item">dd</div>
+    <div class="item">ss</div>
+    <div class="item">ss</div>
+    <div class="item">ss</div>
+    <div class="item">ss</div>
+    <div class="item">ss</div>
+    <div class="item item_1">注意：float，clear和vertical-align属性在Flex项目中无效</div>
+    <div class="item">ss</div>
+    <div class="item">ss</div>
+</div>
+</body>
+</html>

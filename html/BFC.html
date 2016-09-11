@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BFC</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        p {
+            color:black;
+            background: #FF0000;
+            width: 200px;
+            line-height: 100px;
+            text-align:center;
+            margin: 50px;
+        }
+        .p_bfc{
+            overflow: hidden;
+        }
+        .BFC {
+            border: 5px solid #f00;
+            width: 300px;
+            overflow:hidden;
+        }
+
+        .box {
+            border: 5px solid blue;
+            width:100px;
+            height: 100px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div class="bfc">
+    BFC的创建方法：<br>
+    根元素或其它包含它的元素；<br>
+    浮动 (元素的float不为none)；<br>
+    绝对定位元素 (元素的position为absolute或fixed)；<br>
+    行内块inline-blocks(元素的 display: inline-block)；<br>
+    表格单元格(元素的display: table-cell，HTML表格单元格默认属性)；<br>
+    overflow的值不为visible的元素；<br>
+    弹性盒 flex boxes (元素的display: flex或inline-flex)；<br>
+    <br>
+    BFC有一下特性：<br>
+    内部的Box会在垂直方向，从顶部开始一个接一个地放置。<br>
+    Box垂直方向的距离由margin决定。属于同一个BFC的两个相邻Box的margin会发生叠加<br>
+    每个元素的margin box的左边， 与包含块border box的左边相接触(对于从左往右的格式化，否则相反)。即使存在浮动也是如此。<br>
+    BFC的区域不会与float box叠加。<br>
+    BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素，反之亦然。<br>
+    计算BFC的高度时，浮动元素也参与计算
+</div>
+<div class="content">
+    <p>
+        hello world
+    </p>
+    <p>
+        hello world
+    </p>
+    <div class="p_bfc">
+        <p>
+            hello world
+        </p>
+    </div>
+</div>
+
+<div class="BFC">
+    <div class="box">
+
+    </div>
+    <div class="box">
+
+    </div>
+</div>
+</body>
+</html>

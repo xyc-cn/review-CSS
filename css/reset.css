@@ -1,0 +1,74 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0
+}
+
+html, body {
+    color: #636363;
+    background-color: #fbfbfb
+}
+
+body, input, button, textarea, select {
+    font-size: 16px;
+    font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif
+}
+
+@media \0screen {
+    body, input, button, textarea, select {
+        font-family: "Microsoft YaHei", Tahoma
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset, img {
+    border: 0
+}
+
+li {
+    list-style: none
+}
+
+a {
+    color: #d30000;
+    text-decoration: none
+}
+
+a:active {
+    background-color: transparent
+}
+
+section, article, aside, header, footer, nav, dialog, figure, hgroup {
+    display: block
+}
+
+strong {
+    font-weight: normal
+}
+
+button {
+    border: 0 none
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 0;
+    background: #cccccc
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background: #999;
+    border-radius: 10px
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+    background: #666666
+}
